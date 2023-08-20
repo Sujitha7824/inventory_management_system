@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 
 $mysqli = new mysqli("localhost", "root", "", "ims");
@@ -24,7 +24,7 @@ echo "<tr><th>Column 1</th><th>Column 2</th></tr>";
 
 // Loop through each row in the result set and print the data in a table row
 while ($row = $result->fetch_assoc()) {
-    echo "<tr><td>" . $row["sup_no"] . "</td><td>" . $row["name"] . "</td></tr>";
+    echo "<tr><td>" . $row["sup_ID"] . "</td><td>" . $row["name"] . "</td></tr>";
 }
 
 // Close the table
